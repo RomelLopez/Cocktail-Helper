@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Cocktail-Helper/static/css/main.a4b65733.css",
+    "main.js": "/Cocktail-Helper/static/js/main.0ea8a817.js",
+    "static/media/cocktailsthumb.jpg": "/Cocktail-Helper/static/media/cocktailsthumb.f40490d5f31e515d9526.jpg",
+    "index.html": "/Cocktail-Helper/index.html",
+    "main.a4b65733.css.map": "/Cocktail-Helper/static/css/main.a4b65733.css.map",
+    "main.0ea8a817.js.map": "/Cocktail-Helper/static/js/main.0ea8a817.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4b65733.css",
+    "static/js/main.0ea8a817.js"
+  ]
+}
