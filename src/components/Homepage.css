@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(1, 26, 80);
+
+}
+
+.main {
+    margin: auto;
+    width: 50%;
+    color: white;
+
+}
+
+.heading {
+    width: 70%;
+    right: 0;
+
+}
+
+.container {
+    background-color: rgb(1, 26, 80);
+    ;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    left: 0;
+
+}
+
+
+.container .Choices {
+    flex: 33.3%;
+    background-color: rgb(1, 26, 80);
+    color: white;
+
+}
+
+.container .Choices .nonalcoholic {
+    height: 40%;
+    font-size: 380%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.container .Choices .surprise {
+    text-decoration: none;
+    font-size: 400%;
+    width: 100%;
+    border: 2px solid white;
+    ;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.container .Choices .somethingnew {
+    margin-top: 30%;
+    font-size: 190%;
+    width: 100%;
+    color: white;
+}
+
+.headerwords {
+    color: white;
+}
+
+
+.container .Choices .choicespic {
+
+    margin-top: 20%;
+    max-height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    color: white;
+}
+
+.container .Choices .alcoholic {
+    text-decoration: none;
+    height: 40%;
+    font-size: 400%;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 1321px) {
+    .container .Choices .surprise {
+        text-decoration: none;
+        font-size: 340%;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .container .Choices .choicespic {
+
+        margin-top: 20%;
+        max-height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+        color: white;
+    }
+
+    .container .Choices .alcoholic {
+        text-decoration: none;
+        height: 40%;
+        font-size: 200%;
+        cursor: pointer;
+        color: white;
+    }
+
+    .container .Choices .nonalcoholic {
+        height: 40%;
+        font-size: 200%;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+
+    .headerwords {
+        color: white;
+        font-size: 140%;
+    }
+
+}
