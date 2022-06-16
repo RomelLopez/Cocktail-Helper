@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CocktailRandom from '../api/CocktailRandom';
 import './Surprise.css';
-import { Navbar, Navitem } from './Navbar';
+
 
 const Surprise = () => {
     const [surprise, setSurprise] = useState([])
@@ -38,9 +38,7 @@ const Surprise = () => {
 
     return (
         <div>
-            <Navbar>
-                <Navitem icon=':O' />
-            </Navbar>
+            <a className='goback' href="javascript:history.back()">Go Back</a>
             <select onChange={(e) => updateSurprise(e.target.value)}>
                 {surprise.map(cocktail => (
                     <option value={cocktail.idDrink} key={cocktail.idDrink}>{cocktail.strDrink}</option>

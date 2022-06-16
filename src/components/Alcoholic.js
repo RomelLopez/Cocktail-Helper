@@ -18,6 +18,7 @@ const Alcoholic = () => {
 
     return (
         <div>
+            <a className='goback' href="javascript:history.back()">Go Back</a>
             <select onChange={(e) => updateImage(e.target.value)}>
                 {drinks.map((cocktail) => (
                     <option value={cocktail.strDrinkThumb} key={cocktail.idDrink}>

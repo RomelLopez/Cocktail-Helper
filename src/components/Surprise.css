@@ -34,3 +34,9 @@
 p {
     color: white;
 }
+
+.goback {
+    color: white;
+    font-size: 21px;
+    border: 4px black solid;
+}
