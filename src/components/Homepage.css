@@ -72,8 +72,28 @@
 
 
 
+@media screen and (max-width: 1060px) {
+    .main {
+        align-items: none;
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 50%;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .card {
+        width: 100%;
+    }
+
+    .card img {
         width: 100%;
     }
 }
