@@ -70,7 +70,10 @@
     text-align: center;
 }
 
-
+.divlink {
+    text-decoration: none;
+    color: black;
+}
 
 @media screen and (max-width: 1060px) {
     .main {

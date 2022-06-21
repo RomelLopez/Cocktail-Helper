@@ -14,40 +14,47 @@ const Homepage = () => {
             </div>
             <div className="main">
                 <div className='card bounce'>
-                    <p> FUN AND CAREFUL</p>
-                    <div
-                        className="Choices">
-                        <img className="choicespic1"
-                            src={virgincocktail}
-                            alt='drink'
-                        />
-                        <div className="Choices"> <Link className="nonalcoholic" to='/NonAlcoholic' >NON-ALCOHOLIC</Link> </div>
-                    </div>
+                    <Link className='divlink' to='/NonAlcoholic' >
+                        <p> FUN AND CAREFUL</p>
+                        <div
+                            className="Choices">
+                            <img className="choicespic1"
+                                src={virgincocktail}
+                                alt='drink'
+                            />
+                            <div className="Choices"> <Link className="nonalcoholic" to='/NonAlcoholic' >NON-ALCOHOLIC</Link> </div>
+                        </div>
+                    </Link>
                 </div>
                 <div className='card bounce'>
-                    <p> PARTY ANIMAL</p>
-                    <div
-                        className="Choices">
-                        <img className="choicespic"
-                            src={cocktailsthumb}
-                            alt='drink'
-                        />
-                        <div className="Choices"> <Link className="alcoholic" to='/Alcoholic' >ALCOHOLIC</Link> </div>
-                    </div>
+                    <Link to='/Alcoholic' className='divlink'>
+                        <p> PARTY ANIMAL</p>
+                        <div
+                            className="Choices">
+                            <img className="choicespic"
+                                src={cocktailsthumb}
+                                alt='drink'
+                            />
+                            <div className="Choices"> <Link className="alcoholic" to='/Alcoholic' >ALCOHOLIC</Link> </div>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className='card bounce'>
-                    <p> SOMETHING NEW</p>
-                    <img className="choicespic"
-                        src={wineimage}
-                        alt='drink'
-                    />
-                    <div className="Choices">
-                        <Link className="surprise" to='/Surprise' >SURPRISE</Link>
-                    </div>
+                    <Link to='/Surprise' className='divlink'>
+                        <p> SOMETHING NEW</p>
+                        <img className="choicespic"
+                            src={wineimage}
+                            alt='drink'
+                        />
+                        <div className="Choices">
+                            <Link className="surprise" to='/Surprise' >SURPRISE</Link>
+                        </div>
+                    </Link>
                 </div>
+
             </div>
-        </div>
+        </div >
 
     )
 }
