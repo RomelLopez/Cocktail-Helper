@@ -1,7 +1,9 @@
 .container {
     box-sizing: border-box;
 
+
 }
+
 
 .main {
     flex-direction: row;
@@ -65,6 +67,9 @@
     text-decoration: none;
     text-align: center;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     .card {

@@ -2,9 +2,12 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import './Homepage.css'
 import cocktailsthumb from '../images/cocktailsthumb.jpg';
-
+import soberimageupdated from '../images/soberimageupdated.png';
+import wineimage from '../images/wineimage.jpg';
+import virgincocktail from '../images/virgincocktail.png';
 const Homepage = () => {
     return (
+
         <div className="container">
             <div className="heading">
                 <h1 className="headerwords">Welcome, please pick your preference to get started</h1>
@@ -14,8 +17,8 @@ const Homepage = () => {
                     <p> FUN AND CAREFUL</p>
                     <div
                         className="Choices">
-                        <img className="choicespic"
-                            src={cocktailsthumb}
+                        <img className="choicespic1"
+                            src={virgincocktail}
                             alt='drink'
                         />
                         <div className="Choices"> <Link className="nonalcoholic" to='/NonAlcoholic' >NON-ALCOHOLIC</Link> </div>
@@ -36,7 +39,7 @@ const Homepage = () => {
                 <div className='card bounce'>
                     <p> SOMETHING NEW</p>
                     <img className="choicespic"
-                        src={cocktailsthumb}
+                        src={wineimage}
                         alt='drink'
                     />
                     <div className="Choices">
