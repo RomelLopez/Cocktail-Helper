@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import './Homepage.css'
 import cocktailsthumb from '../images/cocktailsthumb.jpg';
 import soberimageupdated from '../images/soberimageupdated.png';
@@ -14,43 +14,35 @@ const Homepage = () => {
             </div>
             <div className="main">
                 <div className='card bounce'>
-                    <Link className='divlink' to='/NonAlcoholic' >
+                    <NavLink className='divlink' to='/NonAlcoholic' >
                         <p> FUN AND CAREFUL</p>
-                        <div
-                            className="Choices">
-                            <img className="choicespic1"
-                                src={virgincocktail}
-                                alt='drink'
-                            />
-                            <div className="Choices"> <Link className="nonalcoholic" to='/NonAlcoholic' >NON-ALCOHOLIC</Link> </div>
-                        </div>
-                    </Link>
+                        <img className="choicespic1"
+                            src={virgincocktail}
+                            alt='drink'
+                        />
+                        <div className="Choices nonalcoholic" to='/NonAlcoholic'> NON-ALCOHOLIC </div>
+                    </NavLink>
                 </div>
                 <div className='card bounce'>
-                    <Link to='/Alcoholic' className='divlink'>
+                    <NavLink to='/Alcoholic' className='divlink'>
                         <p> PARTY ANIMAL</p>
-                        <div
-                            className="Choices">
-                            <img className="choicespic"
-                                src={cocktailsthumb}
-                                alt='drink'
-                            />
-                            <div className="Choices"> <Link className="alcoholic" to='/Alcoholic' >ALCOHOLIC</Link> </div>
-                        </div>
-                    </Link>
+                        <img className="choicespic"
+                            src={cocktailsthumb}
+                            alt='drink'
+                        />
+                        <div className="Choices alcoholic" to='/Alcoholic' >ALCOHOLIC </div>
+                    </NavLink>
                 </div>
 
                 <div className='card bounce'>
-                    <Link to='/Surprise' className='divlink'>
+                    <NavLink to='/Surprise' className='divlink'>
                         <p> SOMETHING NEW</p>
                         <img className="choicespic"
                             src={wineimage}
                             alt='drink'
                         />
-                        <div className="Choices">
-                            <Link className="surprise" to='/Surprise' >SURPRISE</Link>
-                        </div>
-                    </Link>
+                        <div className="Choices surprise" to='/Surprise' >SURPRISE </div>
+                    </NavLink>
                 </div>
 
             </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CocktailRandom from '../api/CocktailRandom';
 import './Surprise.css';
-
+import { NavLink } from "react-router-dom";
 
 const Surprise = () => {
     const [surprise, setSurprise] = useState([])
@@ -38,7 +38,7 @@ const Surprise = () => {
 
     return (
         <div>
-            <a className='goback' href="javascript:history.back()">Go Back</a>
+            <NavLink className='goback' to="/" >Go Back</NavLink>
             <select onChange={(e) => updateSurprise(e.target.value)}>
                 {surprise.map(cocktail => (
                     <option value={cocktail.idDrink} key={cocktail.idDrink}>{cocktail.strDrink}</option>
